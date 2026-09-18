@@ -29,7 +29,7 @@ if uploaded_file is not None:
     with st.spinner("Analyzing nutrients... please wait..."):
         try:
             # Using Gemini 2.0 Flash for blazing fast vision processing
-            model = genai.GenerativeModel("gemini-2.0-flash")
+            model = genai.GenerativeModel("gemini-3.6-flash")
             
             # Crafting a precise prompt to force the AI to return clean data
             prompt = """
